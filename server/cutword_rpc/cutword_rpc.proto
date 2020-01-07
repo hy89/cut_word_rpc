@@ -1,0 +1,9 @@
+// python -m grpc_tools.protoc --python_out=. --grpc_python_out=. -I. cutword_rpc.proto
+syntax = "proto3";
+package cutword;
+service Cut {
+  rpc DoCut(Data) returns (Data){}
+}
+message Data {
+  string text = 1;
+}
