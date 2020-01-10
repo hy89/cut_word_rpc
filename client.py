@@ -15,6 +15,7 @@ def custom_cut(title):
     # 数据转换还要
     keywords = json.loads(response.text)
     print(keywords)
+    conn.close()
     return keywords
 
 
