@@ -22,8 +22,8 @@ user_dict()
 # 生成停用词文件
 kw_set = stopwords_file()
 
-# 加载停用词
-# jieba.analyse.set_stop_words()  # 该代码无效,不清楚原因
+# 加载停用词，停用词要结合固定方法使用，详情见官方demo
+# jieba.analyse.set_stop_words()  
 
 
 # 加载自定义词典到jieba
